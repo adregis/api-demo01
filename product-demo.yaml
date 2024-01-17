@@ -29,6 +29,19 @@ spec:
       enabled: true
       name: camel
       version: builtin
+  metrics:
+    hits:
+      description: Number of API hits
+      friendlyName: Hits
+      unit: "hit"
+  methods:
+    method01:
+      friendlyName: Method01
+  mappingRules:
+    - httpMethod: GET
+      pattern: "/"    
+      increment: 1
+      metricMethodRef: hits 
   # deployment:
   #   apicastHosted:
   #     authentication:
