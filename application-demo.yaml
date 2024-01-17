@@ -1,0 +1,14 @@
+kind: Application
+apiVersion: capabilities.3scale.net/v1beta1
+metadata:
+  name: api-demo-app  # For new publications change the Application name
+  namespace: 3scale
+spec:
+  accountCR:
+    name: developeraccount2 # No need to change
+  applicationPlanName: plan01
+  description: 'testing application '
+  name: testApp
+  productCR:
+    name: api-demo # Inform the new product
+  suspend: false

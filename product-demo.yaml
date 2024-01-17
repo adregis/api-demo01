@@ -1,0 +1,48 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Product
+metadata:
+  name: api-demo # For new publications change the Product name
+spec:
+  name: "OperatedProduct 1" # For new publications change the Product CRD name
+  systemName: api-demo # For new publications change the Product name
+  backendUsages:
+    backend1:
+      path: /
+  applicationPlans:
+    plan01:
+      name: "My Plan 01"
+      setupFee: "00.10"
+  mappingRules:
+   - httpMethod: GET
+     pattern: "/"
+     increment: 1    
+  policies:
+    - configuration:
+        auth_type: user_key
+        user_key: 690034f529beaa66d36360465c736217
+      enabled: true
+      name: default_credentials
+      version: builtin
+    - configuration: {}
+      enabled: true
+      name: apicast
+      version: builtin   
+    - configuration:
+        http_proxy: http://example.com
+        https_proxy: https://example.com
+      enabled: true
+      name: camel
+      version: builtin
+  # deployment:
+  #   apicastHosted:
+  #     authentication:
+  #       oidc:
+  #         issuerType: "keycloak"
+  #         issuerEndpoint: "https://myclientid:myclientsecret@mykeycloack.example.com/auth/realms/myrealm"
+  #         authenticationFlow:
+  #           standardFlowEnabled: false
+  #           implicitFlowEnabled: true
+  #           serviceAccountsEnabled: true
+  #           directAccessGrantsEnabled: true
+  #         jwtClaimWithClientID: "azp"
+  #         jwtClaimWithClientIDType: "plain" 
