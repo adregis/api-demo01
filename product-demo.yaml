@@ -11,11 +11,7 @@ spec:
   applicationPlans:
     plan01:
       name: "My Plan 01"
-      setupFee: "00.10"
-  mappingRules:
-   - httpMethod: GET
-     pattern: "/"
-     increment: 1    
+      setupFee: "00.10"   
   policies:
     - configuration:
         auth_type: user_key
