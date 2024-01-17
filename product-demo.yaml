@@ -3,7 +3,7 @@ kind: Product
 metadata:
   name: api-demo # For new publications change the Product name
 spec:
-  name: "OperatedProduct 1" # For new publications change the Product CRD name
+  name: "OperatedProduct 2" # For new publications change the Product CRD name
   systemName: api-demo # For new publications change the Product name
   backendUsages:
     api-demo-backend:
