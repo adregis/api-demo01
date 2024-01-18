@@ -42,6 +42,10 @@ spec:
       pattern: "/"    
       increment: 1
       metricMethodRef: hits 
+    - httpMethod: GET
+      pattern: "/test"    
+      increment: 1
+      metricMethodRef: hits  
   # deployment:
   #   apicastHosted:
   #     authentication:
