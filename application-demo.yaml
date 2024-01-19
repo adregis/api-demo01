@@ -3,6 +3,10 @@ apiVersion: capabilities.3scale.net/v1beta1
 metadata:
   name: api-demo-app  # For new publications change the Application name
   namespace: 3scale
+  annotations:
+    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   accountCR:
     name: developeraccount2 # No need to change
