@@ -47,6 +47,7 @@ spec:
       increment: 1
       metricMethodRef: hits
   deployment:
+    apicastHosted:
       authentication:
         userkey:
           authUserKey: aeaac65b2ccb92f43c2e6856448612b

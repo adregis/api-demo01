@@ -10,7 +10,7 @@ spec:
     name: developeraccount2 # No need to change
   applicationPlanName: plan01
   description: 'testing application '
-  name: testApp
+  name: api-demo-app  # For new publications change the Application name
   productCR:
     name: api-demo # Inform the new product
   suspend: false
