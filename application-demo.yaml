@@ -4,6 +4,7 @@ metadata:
   name: api-demo-app  # For new publications change the Application name
   namespace: 3scale
   annotations:
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-wave: "2"
 spec:
   accountCR:

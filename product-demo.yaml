@@ -50,7 +50,7 @@ spec:
     apicastHosted:
       authentication:
         userkey:
-          authUserKey: aeaac65b2ccb92f43c2e6856448612b
+          authUserKey: myKey
 
   # deployment:
   #   apicastHosted:
