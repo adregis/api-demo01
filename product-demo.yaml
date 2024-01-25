@@ -45,7 +45,12 @@ spec:
     - httpMethod: GET
       pattern: "/test"    
       increment: 1
-      metricMethodRef: hits  
+      metricMethodRef: hits
+  deployment:
+      authentication:
+        userkey:
+          authUserKey: aeaac65b2ccb92f43c2e6856448612b
+
   # deployment:
   #   apicastHosted:
   #     authentication:
